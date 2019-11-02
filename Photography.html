@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo Gallery - Photography</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Photo Gallery</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="Photography.html">Photography</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+      </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+          
+            <li data-src="media/large/Photography/caribbean_shore.jpg"
+                data-sub-html=""
+                data-download-url="media/original/Photography/caribbean_shore.jpg"
+                
+                data-filename="caribbean_shore.jpg"
+          
+              >
+              <a href="media/original/Photography/caribbean_shore.jpg">
+                <img src="media/thumbs/Photography/caribbean_shore.jpg"
+                     width="120"
+                     height="120"
+                     alt="caribbean_shore.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/Photography/chocoholic.jpg"
+                data-sub-html=""
+                data-download-url="media/original/Photography/chocoholic.jpg"
+                
+                data-filename="chocoholic.jpg"
+          
+              >
+              <a href="media/original/Photography/chocoholic.jpg">
+                <img src="media/thumbs/Photography/chocoholic.jpg"
+                     width="120"
+                     height="120"
+                     alt="chocoholic.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/Photography/crystals.jpg"
+                data-sub-html=""
+                data-download-url="media/original/Photography/crystals.jpg"
+                
+                data-filename="crystals.jpg"
+          
+              >
+              <a href="media/original/Photography/crystals.jpg">
+                <img src="media/thumbs/Photography/crystals.jpg"
+                     width="120"
+                     height="120"
+                     alt="crystals.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/Photography/ny_sky.jpg"
+                data-sub-html=""
+                data-download-url="media/original/Photography/ny_sky.jpg"
+                
+                data-filename="ny_sky.jpg"
+          
+              >
+              <a href="media/original/Photography/ny_sky.jpg">
+                <img src="media/thumbs/Photography/ny_sky.jpg"
+                     width="120"
+                     height="120"
+                     alt="ny_sky.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/Photography/sugar_frost.jpg"
+                data-sub-html=""
+                data-download-url="media/original/Photography/sugar_frost.jpg"
+                
+                data-filename="sugar_frost.jpg"
+          
+              >
+              <a href="media/original/Photography/sugar_frost.jpg">
+                <img src="media/thumbs/Photography/sugar_frost.jpg"
+                     width="120"
+                     height="120"
+                     alt="sugar_frost.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/Photography/under_the_sea.jpg"
+                data-sub-html=""
+                data-download-url="media/original/Photography/under_the_sea.jpg"
+                
+                data-filename="under_the_sea.jpg"
+          
+              >
+              <a href="media/original/Photography/under_the_sea.jpg">
+                <img src="media/thumbs/Photography/under_the_sea.jpg"
+                     width="120"
+                     height="120"
+                     alt="under_the_sea.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/Photography/vixen.jpg"
+                data-sub-html=""
+                data-download-url="media/original/Photography/vixen.jpg"
+                
+                data-filename="vixen.jpg"
+          
+              >
+              <a href="media/original/Photography/vixen.jpg">
+                <img src="media/thumbs/Photography/vixen.jpg"
+                     width="120"
+                     height="120"
+                     alt="vixen.jpg" />
+              </a>
+            </li>  </ul>
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>Copyright Text</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
